@@ -20,6 +20,13 @@ Refer to technology-specific instruction files:
 
 ## Core Principles
 
+### Comments and Documentation
+
+- Comments explain **why** a decision exists: intent, constraints, trade-offs, or behavior that is not evident from the code.
+- Do not comment **what** the code does when its names and structure already express it. Delete comments that merely paraphrase the following code.
+- Keep comments current with the code they describe; update or remove stale comments in the same change.
+- Document reusable component contracts through their TypeScript `Props` interfaces, including the purpose and constraints of props that are not self-evident.
+
 ### Testability
 
 - Every interactive element MUST include a `data-testid` attribute
@@ -49,7 +56,7 @@ Refer to technology-specific instruction files:
 - Create reusable components for common UI patterns
 - Keep components focused on a single responsibility
 - Use props for configuration, not duplication
-- Document component APIs with TypeScript types
+- Document component APIs through their `Props` interfaces
 
 ## Development Workflow
 
