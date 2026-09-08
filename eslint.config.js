@@ -27,6 +27,8 @@ export default [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
+      // Keep type-only imports distinct from runtime imports.
+      "@typescript-eslint/consistent-type-imports": "error",
     },
   },
 

@@ -32,6 +32,10 @@ const games = await getAllGames(getDatabase());
 </Layout>
 ```
 
+### Component Props Documentation
+
+Reusable components must document their `Props` interface with TSDoc/JSDoc. Describe the component contract and every prop whose purpose, accepted values, or constraints are not obvious from its name and type. Keep this documentation focused on consumer-facing intent rather than implementation mechanics, and update it whenever the component behavior changes.
+
 ## Layouts
 
 - Create reusable layout components in `src/layouts/`
